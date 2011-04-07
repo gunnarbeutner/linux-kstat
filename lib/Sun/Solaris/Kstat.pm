@@ -72,7 +72,7 @@ sub update {
       close FILE;
     }
 
-    close MODDIR;
+    closedir(MODDIR);
   }
 
   closedir(KDIR);
